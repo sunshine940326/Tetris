@@ -2,9 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>俄罗斯方块</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.black.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
 </head>
 <body>
+<div class="start-container">
+    <p>
+        <button class="btn btn-success btn-start" id="btn-start">开始游戏</button>
+        <button class="btn btn-info btn-set">设置</button>
+    </p>
+    <div class="game-container">
+        <!--时间面板-->
+        <div class="panel panel-default timer-panel">
+            <div class="panel-heading">
+                使用时间
+            </div>
+            <div class="panel-body">
+                <canvas id="timer">绘制时间</canvas>
+            </div>
+        </div>
 
+        <!--帮助面板-->
+        <div class="panel panel-default help-panel">
+            <div class="panel-body">
+
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
