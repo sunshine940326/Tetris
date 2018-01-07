@@ -44,12 +44,12 @@
         constructor: Shape,
 
         //增加参数，控制右上角下一个方块大小
-        draw: function (context, size) {
-            for(var i = 0;i<this.layout.length;i++){
-                for(var j = 0;j<this.layout.length;j++){
+        draw:function(context,size){      //增加参数，控制右上角下一个方块大小
+            for(var i=0;i<this.layout.length;i++){
+                for(var j=0;j<this.layout[i].length;j++){
                     if(this.layout[i][j]){
                         this.block.draw(context,j+this.x,i+this.y,undefined,size);  //????
-
+                        //控制右上角下一个方块新增参数
                     }
                 }
             }

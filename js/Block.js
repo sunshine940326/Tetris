@@ -6,7 +6,7 @@
         this.blockType = blockType
         this.size = 30
         //方块原始大小
-        this.originSize = 30
+        this.originalSize = 32
         this.sprite = window.ResourceManager.getResource('blocks');  //获取图片
     }
 
@@ -17,6 +17,7 @@
             context.drawImage(this.sprite,((blockType||this.blockType)-1)*this.originalSize,0,this.originalSize,this.originalSize,x*size,y*size,size,size);
 
         }
+
     }
 
     window.Block = Block;
