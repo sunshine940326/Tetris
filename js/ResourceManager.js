@@ -8,6 +8,7 @@
     //回调函数，加载成功后
     var isAddLoaded = function () {
         currentLoaded +=1;
+
         if(currentLoaded === resourceTotalCount && typeof window.ResourceManager.onResourceLoaded ==='function') {
             window.ResourceManager.onResourceLoaded();
         }

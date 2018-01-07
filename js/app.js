@@ -23,10 +23,11 @@
 
     /*创建方法，启动游戏*/
     function StartGame() {
+        // 这里只是设置，没有调用
         ResourceManager.onResourceLoaded = function () {
-            new Board();   测试显示第一个图形
-            gameInst = new Tetris();
-            gameInst.startGame();    //启动游戏
+            new Board();   //测试显示第一个图形
+            // gameInst = new Tetris();
+            // gameInst.startGame();    //启动游戏
         }
         ResourceManager.init();      //调用init方法
     }
@@ -35,7 +36,7 @@
     function _init() {
         /*开始游戏*/
 
-        $('.btn-start').on('click',function (ev) {
+        $('.btn-start').on('click',function () {
             $('.start-container').css('display','none');
             $('.game-container').css('display','block');
             StartGame();
