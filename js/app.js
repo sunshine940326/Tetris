@@ -26,7 +26,7 @@
         // 这里只是设置，没有调用
         ResourceManager.onResourceLoaded = function () {
             new Board();   //测试显示第一个图形
-            // gameInst = new Tetris();
+            gameInst = new Tetris();
             // gameInst.startGame();    //启动游戏
         }
         ResourceManager.init();      //调用init方法

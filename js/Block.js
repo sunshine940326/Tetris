@@ -2,7 +2,7 @@
     'use strict'
 
     function Block(blockType) {
-        //类型指定用哪一种方块
+        //类型指定用哪一种方块、
         this.blockType = blockType
         this.size = 30
         //方块原始大小

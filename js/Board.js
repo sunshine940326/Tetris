@@ -49,7 +49,6 @@
                     this.borderList[i][j] = 0
                 }
             }
-            console.log(this.borderList)
         },
 
 
