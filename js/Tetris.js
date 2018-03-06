@@ -41,6 +41,33 @@
     
     startGame: function () {
       this._startTick()
+    },
+
+    endGame: function () {
+      this._stopTick()
+      this.timer.stop()
+    },
+
+    pause: function () {
+      if( this._state === 'stop'){
+        return
+      }
+
+      this._state === 'pause'
+
+      this._stopTick()
+
+      this.timer.pause()
+    },
+
+    remuse: function () {
+      if( this._state === 'stop'){
+        return
+      }
+
+      this._state = 'playing';
+			this._startTick();
+			this.timer.resume();
     }
   }
 

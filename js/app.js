@@ -33,6 +33,17 @@
     ResourceManager.init();      //调用init方法
   }
 
+  $('.btn-game-pause').on('click',function(evt){   //暂停游戏
+    // alert("你要暂停吗");
+    var el = evt.target;
+    if(el.innerText ==='暂停'){
+      el.innerText = '继续';
+      gameInst.pause();
+    }else{
+      el.innerText = '暂停';
+      gameInst.resume();
+    }
+  });
   /*初始化*/
   function _init() {
     /*开始游戏*/
